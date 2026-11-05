@@ -1,0 +1,19 @@
+.fornecedor-form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.dois-colunas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .dois-colunas {
+        grid-template-columns: 1fr;
+    }
+}

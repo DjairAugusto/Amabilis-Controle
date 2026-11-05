@@ -1,0 +1,200 @@
+.tutorial-section {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: #f4f7fa;
+    min-height: 100vh;
+    gap: 2rem;
+}
+
+.tutorial-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tutorial-header-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background-color: var(--yellow-primary);
+    color: #fff;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.tutorial-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111827;
+    margin: 0;
+}
+
+.tutorial-subtitle {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin: 0.25rem 0 0;
+}
+
+.tutorial-layout {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+/* Sidebar tabs */
+.tutorial-tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    width: 220px;
+    flex-shrink: 0;
+    background: #fff;
+    border-radius: 12px;
+    padding: 0.75rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+}
+
+.tutorial-tab-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    padding: 0.625rem 0.75rem;
+    border: none;
+    background: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 0.875rem;
+    color: #374151;
+    font-weight: 500;
+    transition: background 0.15s, color 0.15s;
+    position: relative;
+}
+
+.tutorial-tab-btn:hover {
+    background-color: #f3f4f6;
+}
+
+.tutorial-tab-btn.active {
+    background-color: #fdf6e0;
+    color: var(--yellow-active);
+    font-weight: 600;
+}
+
+.tutorial-tab-icon {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.tutorial-tab-text {
+    flex: 1;
+}
+
+.tutorial-tab-arrow {
+    flex-shrink: 0;
+    color: var(--yellow-active);
+}
+
+/* Content card */
+.tutorial-content {
+    flex: 1;
+}
+
+.tutorial-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+}
+
+.tutorial-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    color: var(--yellow-active);
+}
+
+.tutorial-card-icon {
+    display: flex;
+    align-items: center;
+}
+
+.tutorial-card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #111827;
+    margin: 0;
+}
+
+.tutorial-card-description {
+    font-size: 0.9375rem;
+    color: #4b5563;
+    line-height: 1.6;
+    margin: 0 0 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.tutorial-features-title {
+    font-size: 0.8125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #9ca3af;
+    margin-bottom: 1rem;
+}
+
+.tutorial-features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.tutorial-feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.625rem;
+    font-size: 0.9375rem;
+    color: #374151;
+    line-height: 1.5;
+}
+
+.tutorial-feature-icon {
+    color: var(--yellow-primary);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+@media (max-width: 768px) {
+    .tutorial-layout {
+        flex-direction: column;
+    }
+
+    .tutorial-tabs {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .tutorial-tab-btn {
+        flex: 1 1 auto;
+        min-width: 120px;
+        justify-content: center;
+    }
+
+    .tutorial-tab-text {
+        flex: unset;
+    }
+
+    .tutorial-tab-arrow {
+        display: none;
+    }
+}

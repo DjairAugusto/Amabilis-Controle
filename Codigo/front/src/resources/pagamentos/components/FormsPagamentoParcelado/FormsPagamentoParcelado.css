@@ -1,0 +1,13 @@
+/* Como o formulário de parcelado possui 3 inputs e 1 botão, o Grid de 2 colunas encaixa perfeitamente */
+.forms-lancar-pagamento {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 16px; 
+    align-items: center; /* 🔴 Centraliza inputs e o botão verticalmente */
+    height: 100%;
+}
+
+.forms-lancar-pagamento button {
+    align-self: self-end; 
+}

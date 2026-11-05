@@ -1,0 +1,107 @@
+/* Estilos específicos passados via prop specificModal */
+.modal-atrelar-recursos {
+  max-width: 800px;
+}
+
+.modal-atrelar-recursos .modal-body {
+    gap: 20px;
+}
+
+.modal-atrelar-recursos-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.info-banner {
+  background-color: #FFF4E6;
+  border-left: 4px solid #FFB84D;
+  padding: 12px 16px;
+  border-radius: 4px;
+}
+
+.info-banner p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.info-banner strong {
+  color: #D97706;
+}
+
+.recursos-atrelar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.recurso-atrelar-item {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr; /* Ajustado para dar mais espaço ao select */
+  gap: 12px;
+  align-items: center;
+  padding: 12px;
+  background-color: #F9FAFB;
+  border: 1px solid #D9DEE4;
+  border-radius: 8px;
+}
+
+.recurso-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.recurso-tipo {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  background-color: #ffffff;
+  border: 1px solid #D9DEE4;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #64748B;
+}
+
+.recurso-desc {
+  font-size: 15px;
+  color: #334155;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+
+.select-tarefa {
+  padding: 8px 10px;
+  border: 1px solid #D9DEE4;
+  border-radius: 6px;
+  font-size: 13px;
+  background-color: white;
+  cursor: pointer;
+  color: #334155;
+  transition: all 0.2s;
+}
+
+.select-tarefa:focus {
+  outline: none;
+  border-color: #FFB84D;
+}
+
+.resumo-atrelamento {
+  background-color: #ECFDF5;
+  border-left: 4px solid #4CAF50;
+  padding: 10px 16px;
+  border-radius: 4px;
+  text-align: right;
+  font-size: 13px;
+  color: #065F46;
+  font-weight: 600;
+}

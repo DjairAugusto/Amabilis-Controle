@@ -1,0 +1,14 @@
+.obras-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #f4f7fa;
+    min-height: 100vh;
+}
+
+.obras-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}

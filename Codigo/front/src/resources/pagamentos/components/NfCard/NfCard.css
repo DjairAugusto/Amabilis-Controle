@@ -1,0 +1,179 @@
+.nf-card {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #D9DEE4;
+    border-radius: 8px;
+    background-color: white;
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+
+.nf-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 20px;
+    transition: border-bottom 0.3s ease;
+}
+
+.nf-info.is-open {
+    border-bottom: 2px solid #D9DEE4;
+}
+
+.nf-card-top-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.nf-card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    margin-left: 50px;
+}
+
+.nf-card-text h2,
+.nf-card-codigo {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.nf-card-subtitulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.nf-card-subtitulo p {
+    font-size: 18px;
+}
+
+.nf-card-top-right {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.nf-cards-values {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-end;
+}
+
+.nf-cards-status-container .dropdown-trigger {
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+}
+
+.nf-cards-status-container .dropdown-trigger span,
+.nf-cards-status-container .dropdown-trigger svg {
+    color: inherit;
+}
+
+/* 2. PENDENTE (Amarelo/Bege) */
+.nf-cards-status-container.pendente .dropdown-trigger {
+    background-color: #FDF4D6;
+    color: #D8A53A;
+}
+
+/* 3. VENCIDA (Vermelho/Rosa) */
+.nf-cards-status-container.vencida .dropdown-trigger {
+    background-color: #FFD6D6;
+    color: #E24A4A;
+}
+
+/* 4. QUITADA (Verde) */
+.nf-cards-status-container.quitada .dropdown-trigger {
+    background-color: #D6F1DE;
+    color: #16A34A;
+}
+
+/* 5. PAGA_PARCIALMENTE (Azul) - A nova cor de progresso! */
+.nf-cards-status-container.paga_parcialmente .dropdown-trigger {
+    background-color: #DBEAFE;
+    color: #2563EB;
+}
+
+/* Efeito Hover genérico para todos escurecerem um pouquinho quando passar o rato */
+.nf-cards-status-container .dropdown-trigger:hover {
+    filter: brightness(0.95);
+}
+
+/* -------------- Pagamento Wrapper (ANIMAÇÃO) ----------------- */
+
+.pagamentos-animacao-wrapper {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease-out;
+}
+
+.pagamentos-animacao-wrapper.is-open {
+    grid-template-rows: 1fr;
+}
+
+.pagamentos-content {
+    min-height: 0;
+    overflow: hidden;
+}
+
+.pagamentos-padding-interno {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    column-gap: 40px;
+    padding: 24px 30px;
+}
+
+.botoes-fluxo-pagamento {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    align-content: center;
+}
+
+.botoes-fluxo-pagamento {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    align-items: center; 
+    height: 100%;      
+}
+
+.form-pagamento-header{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-pagamento-header h4 {
+    margin: 0;
+}
+
+.form-pagamento-header span {
+    cursor: pointer;
+    color: #6C7181;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.forms-lancar-pagamento button,
+.botoes-fluxo-pagamento button {
+    max-height: 45px;
+    height: 45px;       
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

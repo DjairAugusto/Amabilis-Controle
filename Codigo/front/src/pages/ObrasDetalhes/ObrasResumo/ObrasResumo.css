@@ -1,0 +1,83 @@
+.obra-detalhes-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.obra-detalhes-header h1 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    font-size: 28px;
+}
+
+.obras-detalhes-header-top-left {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.status-obra-p {
+    background-color: #FCF9ED;
+    color: var(--yellow-active);
+    padding: 4px 10px;
+    border-radius: 4px; 
+    margin: 0; 
+}
+
+.icon-obras-detalhes-header {
+    width: 40px;
+    height: 40px;
+    color: var(--yellow-active);
+    margin-right: 12px;
+}
+
+.ver-detalhes {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 14px;
+    color: #666;
+}
+
+.endereco-obra-detalhes {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    color: #666;
+    margin-top: 8px;
+}
+
+
+.container-cards-obra-dados-gerais {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+    margin-bottom: 30px;
+}
+
+.card-obra-dados-gerais {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid var(--cards-border);
+    border-radius: 12px;
+}
+
+.nome-dado-obra {
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--font-color-secondary);
+    margin-bottom: 20px;
+}
+
+.valor-dado-obra {
+    font-size: 24px;
+}

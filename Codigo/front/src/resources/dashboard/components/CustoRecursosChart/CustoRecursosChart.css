@@ -1,0 +1,101 @@
+.recurso-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.recurso-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titulo-recurso {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.titulo-recurso h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1e293b;
+    margin: 0;
+}
+
+.icon-recurso {
+    color: #64748b;
+}
+
+.recurso-chart-wrap {
+    flex: 1;
+    min-height: 220px;
+}
+
+
+.tooltip-recurso-container {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 12px 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    min-width: 160px;
+}
+
+.tooltip-recurso-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 4px 0;
+}
+
+.tooltip-recurso-text {
+    font-size: 12px;
+    color: #64748b;
+    margin: 0 0 6px 0;
+    line-height: 1.4;
+}
+
+.tooltip-recurso-value {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0;
+}
+
+/* Legend */
+.recurso-legend {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.recurso-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.recurso-legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.recurso-legend-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: #475569;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}

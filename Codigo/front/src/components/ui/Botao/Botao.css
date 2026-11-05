@@ -1,0 +1,54 @@
+button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 12px;
+    font-size: var(--font-size-base);
+    display: inline-flex;   
+    align-items: center;     
+    justify-content: center; 
+    gap: 8px;        
+    cursor: pointer;
+}
+
+.primary-button {
+    color: white;
+    background-color: var(--yellow-primary);
+    transition: ease 0.5s;
+}
+
+.primary-button:hover {
+    background-color: #ffbb0e;
+}
+
+.secondary-button {
+    border: solid 2px var(--cards-border);
+    color: var(--font-color-secondary);
+    background-color: transparent;
+    transition: ease 0.5s;
+}
+
+.secondary-button:hover {
+    background-color: #e7e8eb;
+}
+
+.delete-button {
+    color: white;
+    background-color: #9f2d2d;
+    transition: ease 0.5s;
+}
+
+.delete-button:hover {
+    background-color: #7a2323;
+}
+
+.export-button {
+    color: #20242E;
+    background-color: transparent;
+    border: 1px solid #CFD2D5;
+    transition: ease 0.3s;
+}
+
+.export-button:hover {
+    background-color: #f4f7fa;
+    border-color: #D4A855;
+}

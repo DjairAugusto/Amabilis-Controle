@@ -1,0 +1,140 @@
+.obra-card {
+    background-color: white;
+    border: 2px solid #D9DEE4;
+    padding: 20px;
+    border-radius: 12px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.obra-card:hover{
+    background-color: rgb(239, 239, 239);
+}
+
+.obra-card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.obra-card-header h3 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    font-size: 20px;
+}
+
+.status-obra-p {
+    background-color: #FCF9ED;
+    color: var(--yellow-active);
+    padding: 4px 10px;
+    border-radius: 4px; 
+    margin: 0; 
+    font-size: 14px;
+}
+
+.icon-obras-card-header {
+    width: 30px;
+    height: 30px;
+    color: var(--yellow-active);
+}
+
+.ver-detalhes {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 14px;
+    color: #666;
+}
+
+.endereco-obra-card {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    color: #666;
+    margin-top: 8px;
+}
+
+.endereco-obra-card p {
+    font-size: 15px; 
+    margin: 0;
+    padding: 0;
+}
+
+.obra-card-footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #a2a5a7;
+    padding: 12px 0 0;
+}
+
+.obra-card-footer p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    font-size: 14px;
+    color: #a2a5a7;
+}
+
+.obra-card-progress {
+    margin: 24px 0;
+}
+
+.obra-card.finalizada .status-obra-p {
+    background-color: rgba(67, 228, 121, 0.15); 
+    color: #43E479;
+}
+
+.obra-card.finalizada .icon-obras-card-header {
+    color: #43E479;
+}
+
+.obra-card.finalizada .progress-bar-fill {
+    background-color: #43E479;
+}
+
+.progress-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+/* O "trilho" cinza da barra */
+.progress-bar-container {
+    width: 100%;
+    height: 12px; /* Espessura gordinha igual ao Figma */
+    background-color: #E6E8EB; 
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* O preenchimento colorido */
+.progress-bar-fill {
+    height: 100%;
+    /* Usa a sua variável de amarelo, se falhar usa um tom padrão */
+    background-color: var(--yellow-active, #F4A522); 
+    border-radius: 10px;
+    /* A transição dá um efeito suave caso os dados atualizem na tela */
+    transition: width 0.8s ease-out; 
+}
+
+.progress-values {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    color: #111; 
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+.progress-total {
+    color: #a2a5a7; 
+    font-weight: 500;
+}

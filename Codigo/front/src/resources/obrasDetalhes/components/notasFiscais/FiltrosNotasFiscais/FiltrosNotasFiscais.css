@@ -1,0 +1,141 @@
+/* ── Botão de Filtros ─────────────────────────────────────────────── */
+
+.filtros-nf-container {
+  position: relative;
+  display: inline-block;
+}
+
+.filtros-nf-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  border: 1px solid #DADEE2;
+  border-radius: 6px;
+  background-color: #F0F3F6;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #20242E;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  position: relative;
+}
+
+.filtros-nf-btn:hover {
+  background-color: #e8ecf1;
+}
+
+.filtros-nf-btn.tem-filtros {
+  background-color: #E3B746;
+  border-color: #D5B531;
+  color: white;
+}
+
+.filtros-nf-btn.tem-filtros:hover {
+  background-color: #D5B531;
+}
+
+.filtros-nf-badge {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #f97316;
+  border-radius: 50%;
+  margin-left: 2px;
+}
+
+/* ── Painel de filtros ────────────────────────────────────────────── */
+
+.filtros-nf-painel {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  background-color: white;
+  border: 1px solid #DADEE2;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  animation: filtros-nf-slideDown 0.2s ease-out;
+  z-index: 200;
+  min-width: 480px;
+}
+
+@keyframes filtros-nf-slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Grid dos campos ──────────────────────────────────────────────── */
+
+.filtros-nf-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.filtros-nf-campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.filtros-nf-campo label {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #20242E;
+  margin: 0;
+}
+
+.filtros-nf-input {
+  padding: 7px 10px;
+  border: 1px solid #DADEE2;
+  border-radius: 4px;
+  background-color: #F0F3F6;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: #20242E;
+  transition: all 0.2s ease;
+}
+
+.filtros-nf-input:focus {
+  outline: none;
+  border-color: #0066cc;
+  background-color: white;
+}
+
+.filtros-nf-dropdown-wrapper {
+  grid-column: 1 / -1;
+}
+
+/* ── Botão limpar ─────────────────────────────────────────────────── */
+
+.filtros-nf-limpar-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: 1px solid #e74c3c;
+  background-color: #ffe6e6;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #c0392b;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filtros-nf-limpar-btn:hover {
+  background-color: #ffd4d4;
+  border-color: #c0392b;
+}

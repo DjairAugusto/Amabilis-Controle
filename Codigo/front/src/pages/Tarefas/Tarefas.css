@@ -1,0 +1,51 @@
+.tarefa-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #f4f7fa;
+    min-height: 100vh;
+}
+
+.tarefas-header {
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 2rem;
+}
+
+.tarefas-header-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.tarefas-titulo {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    color: #20242E;
+    margin: 0;
+    letter-spacing: -0.02em;
+}
+
+.tarefas-subtitulo {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #6C7181;
+    margin: 0;
+}
+
+.tarefas-header-botoes {
+    display: flex;
+    gap: 20px;
+}
+
+.container-tarefas {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

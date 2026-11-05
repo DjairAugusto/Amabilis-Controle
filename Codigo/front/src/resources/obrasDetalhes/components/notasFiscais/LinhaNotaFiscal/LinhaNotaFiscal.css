@@ -1,0 +1,56 @@
+.linha-nota-fiscal {
+  height: 50px;
+  border-bottom: 1px solid #D9DEE4;
+  font-size: 14px;
+}
+
+.linha-nota-fiscal td {
+  padding: 12px 16px;
+  vertical-align: middle;
+  text-align: left;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+.recurso-col {
+  text-align: center;
+  font-weight: 500;
+  color: #333;
+}
+
+.acoes-col {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.status-badge-nf {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.status-badge-nf.pendente {
+  background-color: #FDF4D6;
+  color: #D8A53A;
+}
+
+.status-badge-nf.vencida {
+  background-color: #FFD6D6;
+  color: #E24A4A;
+}
+
+.status-badge-nf.quitada {
+  background-color: #D6F1DE;
+  color: #16A34A;
+}
+
+.status-badge-nf.paga_parcialmente {
+  background-color: #DBEAFE;
+  color: #2563EB;
+}

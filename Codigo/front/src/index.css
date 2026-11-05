@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: var(--font-family-base);
+  line-height: var(--font-line-height);
+  background-color: var(--color-background);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+h1 { 
+  font-size: var(--font-size-title);
+}
+
+h2 { 
+  font-size: var(--font-size-information);
+}
+
+p {
+  font-size: var(--font-size-information);
+  color: var(--color-text-secundary);
+  font-weight: var(--font-weight-medium);
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+:root {
+  /* Cores Principais */
+  --yellow-primary: #E3B746;
+  --yellow-active: #D5B531;
+  --blue-primary: #1D212B;
+  --blue-active: #2C303C;
+  
+  /* Gradientes */
+  --gradient-login: linear-gradient(to bottom, #CB8B06, #FCE487);
+  
+  /* Background */
+  --color-background: #f4f7fa;
+  --color-background-cards: white;
+
+  /* Bordas */
+  --cards-border: #D9DEE4;
+
+  /* Cores textuais */
+  --color-text-primary: #20242E;
+  --color-text-secundary: #6C7181;
+
+  /* Fonts */
+  --font-family-base: 'Inter', sans-serif;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  --font-size-base: 16px;
+  --font-size-title: 32px;
+  --font-size-information: 20px;
+  
+  --font-line-height: 1.5;
+
+  --font-color-primary: #20242E;
+  --font-color-secondary: #6C7181;
+  --font-color-terciary: #D9D4BD;
+}
+

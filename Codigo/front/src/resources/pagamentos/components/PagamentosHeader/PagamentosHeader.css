@@ -1,0 +1,35 @@
+.pagamento-header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pagamento-header-textual {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pagamentos-titulo {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    color: #20242E;
+    margin: 0;
+    letter-spacing: -0.02em;
+}
+
+.pagamentos-subtitulo {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #6C7181;
+    margin: 0;
+}
+
+.pagamento-header-filters {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 2fr 1.5fr 1.5fr; 
+    column-gap: 14px;
+}

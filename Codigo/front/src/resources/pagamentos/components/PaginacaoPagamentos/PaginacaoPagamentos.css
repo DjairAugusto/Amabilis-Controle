@@ -1,0 +1,118 @@
+.tabela-paginacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  border-top: 1px solid #D9DEE4;
+  flex-wrap: wrap;
+  gap: 12px;
+  position: relative;
+}
+
+/* Seletor de tamanho de página */
+.paginacao-tamanho {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #64748B;
+}
+
+.paginacao-tamanho-btn {
+  padding: 4px 10px;
+  border: 1px solid #D9DEE4;
+  border-radius: 4px;
+  background-color: #F5F7FA;
+  font-size: 13px;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.paginacao-tamanho-btn:hover {
+  background-color: #e8ecf1;
+}
+
+.paginacao-tamanho-btn.ativo {
+  background-color: #20242E;
+  border-color: #20242E;
+  color: white;
+  font-weight: 600;
+}
+
+/* Contador */
+.paginacao-contador {
+  font-size: 13px;
+  color: #64748B;
+  white-space: nowrap;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Navegação de páginas */
+.paginacao-navegacao {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.paginacao-nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 1px solid #D9DEE4;
+  border-radius: 4px;
+  background-color: #F5F7FA;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #333;
+}
+
+.paginacao-nav-btn:hover:not(:disabled) {
+  background-color: #e8ecf1;
+}
+
+.paginacao-nav-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.paginacao-pagina-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 30px;
+  height: 30px;
+  padding: 0 6px;
+  border: 1px solid #D9DEE4;
+  border-radius: 4px;
+  background-color: #F5F7FA;
+  font-size: 13px;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.paginacao-pagina-btn:hover {
+  background-color: #e8ecf1;
+}
+
+.paginacao-pagina-btn.ativo {
+  background-color: #20242E;
+  border-color: #20242E;
+  color: white;
+  font-weight: 600;
+}
+
+.paginacao-ellipsis {
+  font-size: 13px;
+  color: #64748B;
+  padding: 0 4px;
+  user-select: none;
+}

@@ -1,0 +1,181 @@
+.tabela-notas-fiscais {
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #D9DEE4;
+  overflow: hidden;
+}
+
+.tabela-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid #D9DEE4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.tabela-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.tabela-contador {
+  font-size: 13px;
+  color: #64748B;
+  white-space: nowrap;
+}
+
+.tabela {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabela thead {
+  background-color: #F5F7FA;
+  border-bottom: 2px solid #D9DEE4;
+}
+
+.tabela th {
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+  color: #64748B;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background-color: #FFFFFF;
+}
+
+.tabela tbody tr:hover {
+  background-color: #F9FAFB;
+}
+
+.tabela td {
+  text-align: left;
+  vertical-align: middle;
+  padding: 12px 16px;
+}
+
+/* ── Rodapé de paginação ──────────────────────────────────────────── */
+
+.tabela-paginacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  border-top: 1px solid #D9DEE4;
+  flex-wrap: wrap;
+  gap: 12px;
+  position: relative;
+}
+
+/* Seletor de tamanho de página */
+.paginacao-tamanho {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #64748B;
+}
+
+.paginacao-tamanho-btn {
+  padding: 4px 10px;
+  border: 1px solid #D9DEE4;
+  border-radius: 4px;
+  background-color: #F5F7FA;
+  font-size: 13px;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.paginacao-tamanho-btn:hover {
+  background-color: #e8ecf1;
+}
+
+.paginacao-tamanho-btn.ativo {
+  background-color: #20242E;
+  border-color: #20242E;
+  color: white;
+  font-weight: 600;
+}
+
+/* Contador */
+.paginacao-contador {
+  font-size: 13px;
+  color: #64748B;
+  white-space: nowrap;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Navegação de páginas */
+.paginacao-navegacao {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.paginacao-nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 1px solid #D9DEE4;
+  border-radius: 4px;
+  background-color: #F5F7FA;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #333;
+}
+
+.paginacao-nav-btn:hover:not(:disabled) {
+  background-color: #e8ecf1;
+}
+
+.paginacao-nav-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.paginacao-pagina-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 30px;
+  height: 30px;
+  padding: 0 6px;
+  border: 1px solid #D9DEE4;
+  border-radius: 4px;
+  background-color: #F5F7FA;
+  font-size: 13px;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.paginacao-pagina-btn:hover {
+  background-color: #e8ecf1;
+}
+
+.paginacao-pagina-btn.ativo {
+  background-color: #20242E;
+  border-color: #20242E;
+  color: white;
+  font-weight: 600;
+}
+
+.paginacao-ellipsis {
+  font-size: 13px;
+  color: #64748B;
+  padding: 0 4px;
+  user-select: none;
+}
+

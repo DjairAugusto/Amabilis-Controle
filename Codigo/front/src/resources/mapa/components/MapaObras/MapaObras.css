@@ -1,0 +1,162 @@
+.mapa-obras-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+    border-radius: 16px; 
+    overflow: hidden;
+    
+    border: 1px solid var(--yellow-active); 
+    
+    background-color: var(--color-background-cards);
+    
+    box-shadow: 0 4px 20px rgba(242, 201, 76, 0.08); 
+}
+.mapa-obras-container {
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+}
+
+.mapa-obras-loading {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(244, 247, 250, 0.8);
+    backdrop-filter: blur(4px); 
+    z-index: 5;
+}
+
+.mapa-obras-loading p {
+    color: var(--color-text-secundary);
+    font-size: var(--font-size-base);
+    font-weight: 500;
+}
+
+.mapa-obras-popup {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background-color: white;
+    border: 1px solid var(--cards-border);
+    border-radius: 12px;
+    padding: 1.25rem;
+    min-width: 280px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    animation: slideIn 0.3s ease-out; 
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.mapa-obras-popup-fechar {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    background: none;
+    border: none;
+    padding: 4px;
+    font-size: 16px;
+    color: var(--color-text-secundary);
+    cursor: pointer;
+    line-height: 1;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.mapa-obras-popup-fechar:hover {
+    color: var(--color-text-primary);
+    background-color: #f4f7fa;
+}
+
+.mapa-obras-popup-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-right: 1.5rem;
+}
+
+.mapa-obras-popup-header h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin: 0;
+}
+
+.mapa-obras-popup-endereco {
+    font-size: 13px;
+    color: var(--color-text-secundary);
+    margin: 0;
+    line-height: 1.4;
+}
+
+.mapa-obras-popup-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--cards-border);
+}
+
+.mapa-obras-status {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 24px;
+    background-color: #FEF3C7;
+    color: #B45309;
+}
+
+.mapa-obras-popup-progresso {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--color-text-secundary);
+}
+
+.mapa-obras-aviso {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    background-color: #FEF3C7;
+    border: 1px solid #FDE68A;
+    border-radius: 8px;
+    padding: 0.75rem 1.25rem;
+    z-index: 10;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.mapa-obras-aviso p {
+    font-size: 13px;
+    font-weight: 500;
+    color: #B45309;
+    margin: 0;
+}
+
+.mapa-obras-popup-link {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--yellow-active);
+    padding: 0.5rem 0 0 0;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.mapa-obras-popup-link:hover {
+    color: var(--blue-primary);
+    text-decoration: underline;
+}

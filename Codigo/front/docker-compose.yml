@@ -1,0 +1,11 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: amabilis-frontend
+    ports:
+      - "5173:80"
+    env_file:
+      - .env
+    restart: unless-stopped

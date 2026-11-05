@@ -1,0 +1,12 @@
+.notas-fiscais-obras {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.notas-fiscais-obras-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}

@@ -1,0 +1,197 @@
+.evolucao-mensal-card {
+    background-color: var(--color-background-cards);
+    border: 1px solid var(--cards-border);
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.title-section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.title-section h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin: 0;
+}
+
+.icon-trending {
+    color: var(--yellow-primary);
+}
+
+.filters-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 6px;
+    border: none;
+}
+
+.date-filter {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.date-filter label {
+    font-size: 12px;
+    color: var(--color-text-secundary);
+    font-weight: 500;
+}
+
+.date-input {
+    padding: 6px 10px;
+    border: 1px solid var(--cards-border);
+    border-radius: 4px;
+    font-size: 12px;
+    background-color: white;
+    color: var(--color-text-primary);
+    cursor: pointer;
+}
+
+.date-input:focus {
+    outline: none;
+    border-color: var(--yellow-primary);
+    box-shadow: 0 0 0 2px rgba(227, 183, 70, 0.1);
+}
+
+.arrow {
+    color: var(--color-text-secundary);
+    font-weight: 500;
+}
+
+.reset-button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--yellow-primary);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.reset-button:hover {
+    background-color: rgba(227, 183, 70, 0.1);
+}
+
+.reset-button svg {
+    width: 16px;
+    height: 16px;
+}
+
+.chart-wrapper {
+    width: 100%;
+}
+
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 260px;
+    gap: 12px;
+    background-color: #fafbfc;
+    border-radius: 8px;
+    border: 1px dashed var(--cards-border);
+}
+
+.empty-icon {
+    color: var(--color-text-secundary);
+    opacity: 0.5;
+}
+
+.empty-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin: 0;
+}
+
+.empty-description {
+    font-size: 13px;
+    color: var(--color-text-secundary);
+    margin: 0;
+}
+
+.tooltip-container {
+    background-color: white;
+    border: 1px solid var(--cards-border);
+    border-radius: 6px;
+    padding: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tooltip-title {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin: 0 0 6px 0;
+    text-transform: capitalize;
+}
+
+.tooltip-emitido {
+    font-size: 11px;
+    color: hsl(45, 75%, 58%);
+    margin: 4px 0;
+}
+
+.tooltip-emitido span {
+    font-weight: 600;
+    color: hsl(45, 75%, 58%);
+}
+
+.tooltip-pago {
+    font-size: 11px;
+    color: hsl(142, 71%, 40%);
+    margin: 4px 0;
+}
+
+.tooltip-pago span {
+    font-weight: 600;
+    color: hsl(142, 71%, 40%);
+}
+
+@media (max-width: 768px) {
+    .card-header {
+        flex-direction: column;
+    }
+
+    .filters-container {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .date-filter {
+        width: 100%;
+    }
+
+    .date-input {
+        width: 100%;
+    }
+
+    .reset-button {
+        width: 100%;
+        justify-content: center;
+    }
+}

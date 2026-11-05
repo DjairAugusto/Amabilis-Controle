@@ -1,0 +1,158 @@
+.linha-item-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+    background-color: white;
+    border: 1px solid #D9DEE4;
+    border-radius: 8px;
+}
+
+.linha-item-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    transition: background-color 0.2s;
+}
+
+.linha-item-principal.expandida {
+    background-color: #F8FAFC;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.item-info-tarefa {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.item-codigo {
+    font-weight: 700;
+    color: #6C7181;
+    font-size: 16px;
+}
+
+.item-descricao {
+    font-weight: 600;
+    color: #20242E;
+    font-size: 18px;
+}
+
+.item-acoes {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.status-wrapper {
+    min-width: 180px;
+}
+
+.status-wrapper .dropdown-trigger {
+    border-radius: 8px;
+    padding: 6px 12px;
+}
+
+.status-wrapper .dropdown-menu {
+    background-color: #F1F5F9; 
+    border: 1px solid #D9DEE4;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.status-wrapper .dropdown-item {
+    color: #475569;
+    padding: 10px 14px;
+    font-size: 14px;
+}
+
+.status-wrapper .dropdown-item:hover {
+    background-color: #E2E8F0; 
+    color: #1E293B;
+}
+
+.status-wrapper.pendente .dropdown-trigger { border-color: #CBD5E1; }
+.status-wrapper.em_andamento .dropdown-trigger { border-color: #EAB308; background-color: #FCF9ED; }
+.status-wrapper.finalizado .dropdown-trigger { border-color: #22C55E; background-color: #F0FDF4; }
+
+
+.btn-expandir-recursos {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: none;
+    border: none;
+    color: #6C7181;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+}
+
+.btn-expandir-recursos:hover {
+    background-color: #F1F5F9;
+    color: #20242E;
+}
+
+/* ESTILOS DA GAVETA DE RECURSOS */
+.item-recursos-dropdown {
+    padding: 16px 20px;
+    background-color: #F8FAFC;
+}
+
+.recursos-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #6C7181;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.tabela-recursos-interna {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabela-recursos-interna th {
+    text-align: left;
+    color: #94A3B8;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.tabela-recursos-interna td {
+    padding: 12px 0;
+    color: #475569;
+    font-size: 16px;
+    border-bottom: 1px solid #F1F5F9;
+}
+
+.tabela-recursos-interna tr:last-child td {
+    border-bottom: none;
+}
+
+.sem-recursos-msg {
+    color: #94A3B8;
+    font-style: italic;
+    font-size: 14px;
+}
+
+/* --- ANIMAÇÃO SUAVE DA SANFONA (GRID TRICK) --- */
+.recursos-wrapper {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease-out; 
+    overflow: hidden;
+}
+
+.recursos-wrapper.is-open {
+    grid-template-rows: 1fr; 
+}
+
+.recursos-content {
+    min-height: 0; 
+}
